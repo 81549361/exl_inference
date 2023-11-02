@@ -1,0 +1,7 @@
+exllamav2
+ninja
+flash-attn --no-build-isolation
+pydantic
+ws4py
+GPUtil
+threading
