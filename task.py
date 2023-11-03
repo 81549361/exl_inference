@@ -235,7 +235,7 @@ def generate(params: Item):
         
         input_ids = tokenizer.encode(prompt)
         prompt_tokens = input_ids.shape[-1]
-        generator.set_stop_conditions(["<|", "\n#", "###", "####", "\n\n\n", "\n[", "\n(", f"\n{params.bot_name}",f"\n{params.user_name}"])
+        generator.set_stop_conditions(["<|", "\n#", "###", "####", "\n\n\n", "\n[", "\n(", f"\n{params.bot_name}:",f"\n{params.user_name}:"])
         generator.begin_stream(input_ids, gen_settings)
         generated_tokens = 0
         text = '';
