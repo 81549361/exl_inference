@@ -1,7 +1,6 @@
 exllamav2
 ninja
-flash-attn --no-build-isolation
+flash-attn
 pydantic
 ws4py
 GPUtil
-threading
